@@ -1,4 +1,4 @@
-eachPermutation.js accepts a list and a callback function.  It will pass each possible permutation of the list to the callback function.
+The 'eachPermutation' function accepts a list and a callback function.  It will pass each possible permutation of the list to the callback function.
 
 Example:
 
