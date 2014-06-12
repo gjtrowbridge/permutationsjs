@@ -1,6 +1,6 @@
 //Calls an iterator on each possible permutation
 //of the passed-in values array
-var eachPermute = function(values, iterator) {
+var eachPermutation = function(values, iterator) {
 
   var innerPermute = function(permutation, remainingValues) {
     if (remainingValues.length === 0) {
@@ -11,7 +11,7 @@ var eachPermute = function(values, iterator) {
         var newRemaining = remainingValues.slice();
 
         //Remove and save the ith entry in the new remaining values array
-        var toPush = newRemaining.splice(i,1);
+        var toPush = newRemaining.splice(i,1)[0];
 
         //Creates a copy of the permutation list so far
         var newPermutation = permutation.slice();
